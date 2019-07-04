@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+
+    </head>
+
+
+    <body class="fixed-left" style="height:900px;">
+
+        <!-- Begin page -->
+       <iframe id="myframe" src="https://www.ringana.com/" style="height:100%;width:100%;"></iframe>
+       <script>
+            document.getElementById("myframe").onload = function() {
+                var iframe = document.getElementById("myframe");
+                var win = iframe.contentWindow;
+                var doc = iframe.contentDocument? iframe.contentDocument: iframe.contentWindow.document;
+                var form = doc.getElementById("m_modal--adventkalender");
+                console.log(form);
+                form.style.display = "none";
+            }
+       </script>
+    </body>
+</html>
